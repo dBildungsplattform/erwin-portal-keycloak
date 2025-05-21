@@ -6,7 +6,7 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+'
 
 concurrency:
-  group: dbildungs-iam-keycloak-image-helm-chart
+  group: erwin-portal-keycloak-image-helm-chart
   cancel-in-progress: true
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       contents: read
     uses: dBildungsplattform/dbp-github-workflows/.github/workflows/image-publish-trivy.yaml@7
     with:
-      image_name: "dbildungs-iam-keycloak"
+      image_name: "erwin-portal-keycloak"
       run_trivy_scan: true
       image_tag_generation: version_git_tag
       container_registry: "ghcr.io"
@@ -26,7 +26,7 @@ jobs:
       report_location: "Dockerfile"
       target: "deployment"
   
-  # Helm Chart
+  #Helm Chart:
   scan_helm:
     uses: dBildungsplattform/dbp-github-workflows/.github/workflows/check-helm-kics.yaml@5
     permissions:
@@ -37,7 +37,7 @@ jobs:
     uses: dBildungsplattform/dbp-github-workflows/.github/workflows/chart-release.yaml@7
     secrets: inherit
     with:
-      chart_name: "dbildungs-iam-keycloak"
+      chart_name: "erwin-portal-keycloak"
       helm_chart_version_generation: specified 
       image_tag_generation: specified 
       helm_chart_version: "${{ github.ref_name }}"
