@@ -51,7 +51,7 @@ database:
 
 realm:
   name: erwin-portal-keycloak-realm
-  filepath: "dev-realm-spsh.json"
+  filepath: "dev-realm-erwin.json"
 
 restartPolicy: Always
 
@@ -140,7 +140,7 @@ autoscaling:
   targetCPUUtilizationPercentage: 60
 
 status:
-  url: "https://status.dev.spsh.dbildungsplattform.de/"
+  url: "https://status.dev.erwin.dbildungsplattform.de/"
 
 podDisruptionBudget:
   enabled: true

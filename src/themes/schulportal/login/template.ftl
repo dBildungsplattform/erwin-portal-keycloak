@@ -55,7 +55,7 @@
                         height="60"
                     />
                 </a>
-                <a class="header-help" target="_blank" href="https://medienberatung.iqsh.de/schulportal-sh.html">${msg("help")}</a>
+                <a class="header-help" target="_blank" href="https://medienberatung.iqsh.de/portal-sh.html">${msg("help")}</a>
             </div>
             <div class="light-header"></div>
         </div>
@@ -119,7 +119,7 @@
                 </#if>
             </header>
 
-            <#-- SPSH: custom messages for failed OTP authentication and update password form -->
+            <#-- erwin: custom messages for failed OTP authentication and update password form -->
             <#-- Remove all whitespaces and linebreaks from the message key to-->
             <#assign customMessages = {
                 "Authenticationfailed.falscherOTP-Wert": msg("authenticationOtpFailedMessage"),
@@ -146,7 +146,7 @@
                 <div id="kc-content-wrapper">
                 <#-- App-initiated actions should not see warning messages about the need to complete the action -->
                 <#-- during login.                                                                               -->
-                <#-- SPSH: commented the following block to customize warning messages                           -->
+                <#-- erwin: commented the following block to customize warning messages                           -->
                 <#if displayMessage && message?has_content && (message.type != 'warning' || !isAppInitiatedAction??) && message.type != 'info'>
                     <div class="alert-${message.type} ${properties.kcAlertClass!} pf-m-<#if message.type == 'error'>danger<#else>${message.type}</#if>">
                         <div class="pf-c-alert__icon">
@@ -196,7 +196,7 @@
             </div>
         </div>
     </div>
-    <div id="schulportal-footer" class="light-footer">
+    <div id="portal-footer" class="light-footer">
         <div class="footer-items">
             <a
                 class="footer-item"
@@ -208,7 +208,7 @@
             </a>
             <a
                 class="footer-item"
-                href="https://medienberatung.iqsh.de/schulportal-sh.html"
+                href="https://medienberatung.iqsh.de/portal-sh.html"
                 rel="noopener noreferrer"
                 target="_blank"
             >
