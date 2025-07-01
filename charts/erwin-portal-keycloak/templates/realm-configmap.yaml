@@ -6,5 +6,5 @@ metadata:
   labels:
   {{ include "common.labels" . | nindent 4 }}
 data:
-  realm-erwin.json: |-
+  realm-spsh.json: |-
 {{ .Files.Get .Values.realm.filepath | indent 4 }}
