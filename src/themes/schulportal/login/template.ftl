@@ -13,7 +13,7 @@
         </#list>
     </#if>
     <title>${msg("title")}</title>
-    <link rel="icon" href="${url.resourcesPath}/img/Schulportal_SH_Bildmarke_RGB_Anwendung_HG_Blau.svg" />
+    <link rel="icon" href="${url.resourcesPath}/img/ErWIn_Portal_Bildmarke_RGB_Anwendung_HG_Blau.svg" />
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
             <link href="${url.resourcesCommonPath}/${style}" rel="stylesheet" />
@@ -48,7 +48,7 @@
             <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">
                 <a href="${client.baseUrl}">
                     <img
-                        src="${url.resourcesPath}/img/Schulportal_SH_Wort_Bildmarke_RGB_Anwendung_HG_Blau.svg"
+                        src="${url.resourcesPath}/img/ErWIn_Portal_Wort_Bildmarke_RGB_Anwendung_HG_Blau.svg"
                         alt="Logo Schulportal"
                         class="header-logo"
                         width="354"
@@ -61,7 +61,7 @@
         </div>
         <div class="title-logo">
             <img
-                src="${url.resourcesPath}/img/Schulportal_SH_Wort_Bildmarke_RGB_Anwendung_HG_Weiss.svg"
+                src="${url.resourcesPath}/img/ErWIn_Portal_Wort_Bildmarke_RGB_Anwendung_HG_Weiss.svg"
                 alt="Logo Schulportal"
             />
         </div>
@@ -249,26 +249,26 @@
         </div>
         <div class="footer-logos">
             <a
-                href="https://www.digitalpaktschule.de/de/schleswig-holstein-1800.html"
+                href="https://www.dataport.de/services-produkte/it-produkte/projekt-erwin/"
                 rel="noopener noreferrer"
                 target="_blank"
             >
                 <img
-                    alt="Logo Digitalpakt"
+                    alt="Logo ErWIn Portal"
                     class="footer-logo"
-                    src="${url.resourcesPath}/img/digitalPakt.svg"
+                    src="${url.resourcesPath}/img/Logo-ErWIn-Portal-dunkel.svg"
                 />
             </a>
-            <div class="footer-logo-divider"></div>
+            <div class="footer-logo-divider"></div>           
             <a
-                href="https://www.schleswig-holstein.de/DE/landesportal/landesportal_node.html"
+                href="https://www.bmfsfj.de/"
                 rel="noopener noreferrer"
                 target="_blank"
             >
                 <img
-                    alt="Logo Schleswig-Holstein"
+                    alt="Logo BMBF"
                     class="footer-logo"
-                    src="${url.resourcesPath}/img/landesdachmarke_01_KORR.svg"
+                    src="${url.resourcesPath}/img/digitalPakt.svg"
                 />
             </a>
         </div>
