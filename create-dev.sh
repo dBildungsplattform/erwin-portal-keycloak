@@ -6,4 +6,4 @@ docker create \
  -e KEYCLOAK_ADMIN=admin \
  -e KEYCLOAK_ADMIN_PASSWORD=admin \
  --name dbildungs-iam-keycloak \
- schulcloud/dbildungs-iam-keycloak/dev:latest
+ ghcr.io/dbildungsplattform/dbildungs-iam-keycloak:latest
