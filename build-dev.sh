@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --target development -t  ghcr.io/dbildungsplattform/dbildungs-iam-keycloak .
+docker build --target development -t  ghcr.io/dbildungsplattform/erwin-portal-keycloak:latest .

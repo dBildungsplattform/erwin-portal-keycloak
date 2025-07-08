@@ -343,7 +343,7 @@ label:has(+ .pf-c-input-group > .pf-c-form-control[aria-invalid="true"]) {
 
 @media (max-width: 959px) {
   .header-logo {
-    background: url(../img/Schulportal_SH_Bildmarke_RGB_Anwendung_HG_Blau.svg)
+    background: url(../img/ErWIn_Portal_Bildmarke_RGB_Anwendung_HG_Blau.svg)
       no-repeat;
     height: 33px;
     /* this padding is necessary to move the old image out of the viewport */
