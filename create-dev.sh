@@ -6,4 +6,4 @@ docker create \
  -e KEYCLOAK_ADMIN=admin \
  -e KEYCLOAK_ADMIN_PASSWORD=admin \
  --name dbildungs-iam-keycloak \
- ghcr.io/dbildungsplattform/dbildungs-iam-keycloak:latest
+    ghcr.io/dbildungsplattform/erwin-portal-keycloak:latest
