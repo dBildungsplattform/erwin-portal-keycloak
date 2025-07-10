@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ template "common.names.name" . }}-loadbalancerip-ip
+  namespace: {{ template "common.names.namespace" . }}
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-buffer-size: 16k
+    nginx.ingress.kubernetes.io/proxy-buffers-number: "4"
+status:
+  loadBalancer:
+    ingress:
+      - ip: 212.132.122.17
+spec:
+  ingressClassName: nginx-loadbalancerip
+  rules:
+    - host: {{ .Values.keycloakHostname  }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ template "common.names.name" . }}
+                port:
+                  number: 80
