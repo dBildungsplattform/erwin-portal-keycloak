@@ -8,8 +8,12 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-buffers-number: "4"
 spec:
   ingressClassName: nginx-loadbalancerip
+  tls:
+    - hosts:
+        - {{ .Values.keycloakHostname }}
+      secretName: erwin-portal-default-tls
   rules:
-    - host: {{ .Values.keycloakHostname  }}
+    - host: {{ .Values.keycloakHostname }}
       http:
         paths:
           - path: /
